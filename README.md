@@ -1,6 +1,6 @@
 # Lin_F9 tutorial
 
-Download a fork of Smina docking suite with Lin_F9 as an optional built-in scoring function at <https:github.com/cyangNYU/Lin_F9_test>
+Download a fork of Smina docking suite with Lin_F9 as an optional built-in scoring function at <https://github.com/cyangNYU/Lin_F9_test>
 
 Take one protein-ligand complex (PDB_id: 1eby) as an example:
 
@@ -10,7 +10,7 @@ MGLTools are used for preparing PDBQT files: 1eby_ligand.pdbqt and 1eby_protein.
 
 
 
-#### Local optimization
+#### **Local optimization**
 
 ```shell
 ./smina.static -r 1eby_protein.pdbqt -l 1eby_ligand.pdbqt --local_only --scoring Lin_F9 -o 1eby_optimized.pdb 
@@ -24,7 +24,7 @@ grep 'Affinity' 1eby_optimized.pdb | awk '{print $3}'
 
 
 
-#### Flexible re-docking
+#### **Flexible re-docking**
 
 ```shell
 ./smina.static -r 1eby_protein.pdbqt -l 1eby_ligand.pdbqt --autobox_ligand 1eby_ligand.pdbqt --scoring Lin_F9 -o 1eby_flexRedock.pdb
@@ -47,7 +47,7 @@ python split_docked.py 1eby_flexRedock.pdb 1eby_flexRedock
 
 
 
-#### End-to-end (E2E) docking
+#### **End-to-end (E2E) docking**
 
 ##### 1. OpenBabel 2.4.1 used to generate maximum 10 conformers per ligand.
 
