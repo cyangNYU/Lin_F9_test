@@ -1,6 +1,6 @@
 # Lin_F9 tutorial
 
-Download a fork of Smina docking suite with Lin_F9 as an optional built-in scoring function at <https://www.google.com>
+Download a fork of Smina docking suite with Lin_F9 as an optional built-in scoring function at <https:github.com/cyangNYU/Lin_F9_test>
 
 Take one protein-ligand complex (PDB_id: 1eby) as an example:
 
@@ -36,7 +36,9 @@ Print the score of the best-scored pose
 grep -m1 'Affinity' 1eby_flexRedock.pdb | awk '{print $3}'
 ```
 
-Calculate the RMSD between the best-scored pose and crystal ligand pose
+Calculate the RMSD between the best-scored pose and crystal ligand pose 
+
+ (DockRMSD is used to calculate RMSD, can be download at https://zhanglab.ccmb.med.umich.edu/DockRMSD/)
 
 ```shell
 python split_docked.py 1eby_flexRedock.pdb 1eby_flexRedock
