@@ -75,7 +75,7 @@ grep -m1 'Affinity' 1eby_E2E/*.pdb | sort -nk3 | head -n 1 | awk '{print $3}'
 Calculate the RMSD between the best-scored pose and crystal ligand pose
 
 ```shell
-./Get_split.sh
+./GetSplit.sh
 ./calc_rmsd_for_pose.sh 1eby_E2E_top1.pdb 1eby_ligand.mol2
 ```
 
