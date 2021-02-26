@@ -1,5 +1,11 @@
 # Lin_F9 tutorial
 
+*Lin_F9 is a linear empirical scoring function for protein-ligand docking.*
+
+<img src="/home/cyang/Lin_F9/tutorial/plot.png" alt="plot" style="zoom:60%;" />
+
+### Preparation
+
 Download a fork of Smina docking suite with Lin_F9 as an optional built-in scoring function at <https://github.com/cyangNYU/Lin_F9_test>
 
 Take one protein-ligand complex (PDB_id: 1eby) as an example:
@@ -8,9 +14,11 @@ Initial files of 1eby_ligand.mol2 and 1eby_protein.pdb obtained from PDBbind dat
 
 MGLTools are used for preparing PDBQT files: 1eby_ligand.pdbqt and 1eby_protein.pdbqt.
 
+(MGLTools can be downloaded at http://mgltools.scripps.edu/downloads)
 
 
-### **Local optimization**
+
+### **Lin_F9 is a linear empirical scoring function for protein-ligand docking.Local optimization**
 
 ```shell
 ./smina.static -r 1eby_protein.pdbqt -l 1eby_ligand.pdbqt --local_only --scoring Lin_F9 -o 1eby_optimized.pdb 
@@ -38,7 +46,7 @@ grep -m1 'Affinity' 1eby_flexRedock.pdb | awk '{print $3}'
 
 Calculate the RMSD between the best-scored pose and crystal ligand pose 
 
- (DockRMSD is used to calculate RMSD, can be download at https://zhanglab.ccmb.med.umich.edu/DockRMSD/)
+ (DockRMSD is used to calculate RMSD, can be downloaded at https://zhanglab.ccmb.med.umich.edu/DockRMSD/)
 
 ```shell
 python split_docked.py 1eby_flexRedock.pdb 1eby_flexRedock
