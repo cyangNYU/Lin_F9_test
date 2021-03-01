@@ -2,7 +2,7 @@
 
 *Lin_F9 is a linear empirical scoring function for protein-ligand docking.*
 
-<img src="/home/cyang/Lin_F9/tutorial/Lin_F9_test/plot.png" alt="plot" style="zoom:60;" />
+<img src="plot.png" alt="plot" width=450 />
 
 ### Preparation
 
@@ -18,7 +18,7 @@ MGLTools are used for preparing PDBQT files: 1eby_ligand.pdbqt and 1eby_protein.
 
 
 
-### **Lin_F9 is a linear empirical scoring function for protein-ligand docking.Local optimization**
+### **Local optimization**
 
 ```shell
 ./smina.static -r 1eby_protein.pdbqt -l 1eby_ligand.pdbqt --local_only --scoring Lin_F9 -o 1eby_optimized.pdb 
