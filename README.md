@@ -2,7 +2,7 @@
 
 *Lin_F9 is a linear empirical scoring function for protein-ligand docking.*
 
-<img src="/home/cyang/Lin_F9/tutorial/Lin_F9_test/plot.png" alt="plot" style="zoom:60;" />
+<img src="plot.png" alt="plot" width=450 />
 
 ### Preparation
 
