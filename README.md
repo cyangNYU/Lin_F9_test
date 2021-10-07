@@ -18,7 +18,7 @@ MGLTools are used for preparing PDBQT files: 1eby_ligand.pdbqt and 1eby_protein.
 
 
 
-### **Lin_F9 is a linear empirical scoring function for protein-ligand docking.Local optimization**
+### **Local optimization**
 
 ```shell
 ./smina.static -r 1eby_protein.pdbqt -l 1eby_ligand.pdbqt --local_only --scoring Lin_F9 -o 1eby_optimized.pdb 
@@ -86,4 +86,21 @@ Calculate the RMSD between the best-scored pose and crystal ligand pose
 ./GetSplit.sh
 ./calc_rmsd_for_pose.sh 1eby_E2E_top1.pdb 1eby_ligand.mol2
 ```
+
+### Reference
+
+Chao Yang and Yingkai Zhang, *J. Chem. Inf. Model.*, **61**, 4630 - 4644, (2021).
+
+[Lin_F9: A Linear Empirical Scoring Function for Protein–Ligand Docking.](http://dx.doi.org/10.1021/acs.jcim.1c00737)
+
+
+
+
+
+
+
+
+
+
+
 
